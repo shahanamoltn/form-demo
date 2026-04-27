@@ -1,0 +1,113 @@
+{
+    "name": "test",
+    "fantasyName": "test",
+    "vendor": "JJ",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": "",
+        "SCS": ""
+    },
+    "description": "custom field",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/test.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/test/Configuration/test.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/test/Sass/_test-test.scss",
+            "myaccount": "Modules/test/Sass/_test-test.scss",
+            "checkout": "Modules/test/Sass/_test-test.scss"
+        },
+        "files": [
+            "Modules/test/Sass/_test-test.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/test/Templates/jj_test_test.tpl",
+                    "Modules/test/Templates/jj_product_details_full.tpl"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/test/Templates/jj_test_test.tpl",
+                    "Modules/test/Templates/jj_product_details_full.tpl"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/test/Templates/jj_test_test.tpl",
+                    "Modules/test/Templates/jj_product_details_full.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/test/JavaScript/JJ.test.test.js",
+            "myaccount": "Modules/test/JavaScript/JJ.test.test.js",
+            "checkout": "Modules/test/JavaScript/JJ.test.test.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/test/JavaScript/JJ.test.test.js",
+                    "Modules/test/JavaScript/test.View.js",
+                    "Modules/test/JavaScript/JJ.test.test.Model.js",
+                    "Modules/test/JavaScript/JJ.test.test.SS2Model.js",
+                    "Modules/test/JavaScript/productDetailsFull.View.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/test/JavaScript/JJ.test.test.js",
+                    "Modules/test/JavaScript/test.View.js",
+                    "Modules/test/JavaScript/JJ.test.test.Model.js",
+                    "Modules/test/JavaScript/JJ.test.test.SS2Model.js",
+                    "Modules/test/JavaScript/productDetailsFull.View.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/test/JavaScript/JJ.test.test.js",
+                    "Modules/test/JavaScript/test.View.js",
+                    "Modules/test/JavaScript/JJ.test.test.Model.js",
+                    "Modules/test/JavaScript/JJ.test.test.SS2Model.js",
+                    "Modules/test/JavaScript/productDetailsFull.View.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/test/SuiteScript/JJ.test.test.js",
+        "files": [
+            "Modules/test/SuiteScript/JJ.test.test.js",
+            "Modules/test/SuiteScript/test.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\test",
+    "suitescript2": {
+        "files": [
+            "Modules/test/SuiteScript2/test.Service.ss"
+        ]
+    }
+}

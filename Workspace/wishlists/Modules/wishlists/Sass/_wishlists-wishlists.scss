@@ -1,0 +1,53 @@
+// /* Using native SCA Design System as requested */
+// .wishlist-dropdown-container {
+//     @extend .info-card; /* Inherits native theme borders, radius, and shadows */
+//     position: absolute !important;
+//     z-index: 999999 !important;
+//     top: 100% !important;
+//     left: 50% !important;
+//     transform: translateX(-50%) !important;
+//     width: 320px !important;
+//     display: block !important;
+//     background: #ffffff !important;
+//     overflow: visible !important;
+// }
+
+// .wishlist-dropdown-content {
+//     @extend .info-card-content; /* Inherits native theme padding and layout */
+//     color: $sc-color-secondary; /* Uses theme branded color */
+//     font-weight: bold;
+// }
+
+// /* Ensure the native button is hidden but interactive off-screen */
+// .product-list-control-button-wishlist {
+//     position: fixed !important;
+//     left: -5000px !important;
+//     top: -5000px !important;
+//     pointer-events: none !important;
+// }
+
+// /* Clean heart styling */
+// .wishlist-button-container {
+//     display: block !important;
+//     width: 100% !important;
+//     text-align: center !important;
+//     position: relative !important;
+//     padding: 10px 0 !important;
+// }
+
+// .wishlist-icon-btn {
+//     background: none !important;
+//     border: none !important;
+//     font-size: 32px !important;
+//     color: #e74c3c !important;
+//     cursor: pointer !important;
+// }
+.wishlist-info-card {
+    @extend .info-card;
+}
+
+.wishlist-info-card-content {
+    @extend .info-card-content;
+    color: $sc-color-secondary;
+    font-weight: bold;
+}

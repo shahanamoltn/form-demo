@@ -1,0 +1,78 @@
+{
+    "name": "Form",
+    "fantasyName": "Form",
+    "vendor": "JJ",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=25.1.0",
+        "SCS": ""
+    },
+    "description": "set",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/Form.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/Form/Configuration/Form.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "myaccount": "Modules/Form/Sass/_form-form.scss"
+        },
+        "files": [
+            "Modules/Form/Sass/_form-form.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "myaccount": {
+                "files": [
+                    "Modules/Form/Templates/jj_form_form.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "myaccount": "Modules/Form/JavaScript/JJ.Form.Form.js"
+        },
+        "application": {
+            "myaccount": {
+                "files": [
+                    "Modules/Form/JavaScript/JJ.Form.Form.js",
+                    "Modules/Form/JavaScript/Form.View.js",
+                    "Modules/Form/JavaScript/contactFormModule.Router.js",
+                    "Modules/Form/JavaScript/JJ.Form.Form.Model.js",
+                    "Modules/Form/JavaScript/JJ.Form.Form.SS2Model.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/Form/SuiteScript/JJ.Form.Form.js",
+        "files": [
+            "Modules/Form/SuiteScript/JJ.Form.Form.js",
+            "Modules/Form/SuiteScript/Form.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\Form",
+    "suitescript2": {
+        "files": [
+            "Modules/Form/SuiteScript2/Form.Service.ss"
+        ]
+    }
+}

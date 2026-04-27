@@ -1,0 +1,29 @@
+{
+  "generator-extension": {
+    "ext_application": {
+      "Form": [
+        "myaccount"
+      ],
+      "test": [
+        "shopping",
+        "myaccount",
+        "checkout"
+      ],
+      "whishlist": [
+        "shopping",
+        "myaccount",
+        "checkout"
+      ],
+      "wishlists": [
+        "shopping",
+        "myaccount",
+        "checkout"
+      ],
+      "salesRep": [
+        "shopping",
+        "myaccount",
+        "checkout"
+      ]
+    }
+  }
+}
