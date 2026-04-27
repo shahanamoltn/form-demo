@@ -22,7 +22,6 @@ define('JJ.test.ProductDetailsFull.View', [
                 'blur [data-action="update-delivery-note"]': 'blurDeliveryNote'
             });
 
-
             _.extend(ProductDetailsFullView.prototype, {
                 showWarrantyInfo: function (e) {
                     e.preventDefault();

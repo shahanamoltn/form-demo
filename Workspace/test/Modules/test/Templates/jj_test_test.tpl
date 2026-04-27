@@ -9,7 +9,6 @@
         <label class="testextension-delivery__label" style="display:block; margin-bottom: 5px;">Delivery Note Instructions:</label>
         <input type="text" class="testextension-delivery__input" data-action="update-delivery-note" placeholder="Enter note (min 5 characters)" style="width: 100%; border: 1px solid #ccc; padding: 8px; box-sizing: border-box;"/>
       </div>
-      
       {{#if showWarrantyInfo}}
          <button class="testextension-delivery__button" data-action="show-warranty-info" style="margin-top: 15px; padding: 8px 15px; background: #007bff; color: white; border: none; cursor: pointer; border-radius: 3px;">
             View Warranty Info

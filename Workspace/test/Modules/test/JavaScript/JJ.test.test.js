@@ -11,7 +11,6 @@ define(
         return {
             mountToApp: function mountToApp(container) {
                 var pdp = container.getComponent('PDP');
-
                 if (pdp) {
                     pdp.addChildViews(pdp.PDP_FULL_VIEW, {
                         'Product.Price': {

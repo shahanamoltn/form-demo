@@ -108,7 +108,6 @@
 				<div id="banner-details-bottom" class="product-details-full-banner-details-bottom" data-cms-area="item_info_bottom" data-cms-area-filters="page_type"></div>
 			</div>
 			</div>
-
 		</section>
 
 		<div data-cms-area="product_details_full_cms_area_5" data-cms-area-filters="page_type"></div>

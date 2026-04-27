@@ -32,7 +32,6 @@ define('JJ.test.test.View'
                 });
             }
         },
-
         events: {
             'click [data-action="show-warranty-info"]': 'showWarrantyInfo',
             'change [data-action="update-delivery-note"]': 'validateDeliveryNote',
