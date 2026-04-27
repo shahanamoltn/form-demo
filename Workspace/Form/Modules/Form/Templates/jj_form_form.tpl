@@ -60,14 +60,12 @@
 
     Cancel
 </button>
- 
   <button type="submit" class="button button-primary" data-action='submit-form'>
 
     Submit
 </button>
  
 </div>
- 
   </form>
 
   {{#if successMessage}}

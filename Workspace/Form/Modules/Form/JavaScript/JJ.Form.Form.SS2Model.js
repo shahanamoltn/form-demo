@@ -18,5 +18,4 @@ define("JJ.Form.Form.SS2Model", ["Backbone", "Utils"], function(
             true
         )
 });
-
 });

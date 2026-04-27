@@ -64,7 +64,6 @@ define([
       }));
 
     } catch (e) {
-
       ctx.response.write(JSON.stringify({
         success: false,
         message: e.message || 'Something went wrong'

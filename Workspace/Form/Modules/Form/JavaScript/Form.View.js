@@ -54,8 +54,6 @@ define('JJ.Form.Form.View'
         this.render();
         return;
       }
- 
- 
         this.model.save(data)
         .done(function (response) {
           console.log('reponse from creating new request',response)

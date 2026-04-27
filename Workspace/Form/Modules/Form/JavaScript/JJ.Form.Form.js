@@ -1,4 +1,3 @@
-
 define(
 	'JJ.Form.Form'
 ,   [
@@ -28,7 +27,6 @@ define(
           url: "contact",
           index: 1,
         };
-
         myAccountMenu.addGroupEntry(contactEntry);
       }
       console.log(Utils.getAbsoluteUrl(
