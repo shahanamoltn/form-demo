@@ -21,7 +21,6 @@
 </button>
         {{/if}}
 </div>
- 
     {{!-- 3. THE FLYOUT / DROPDOWN CONTAINER --}}
 <div class="wishlist-dropdown-container" 
          style="position: absolute; top: 100%; left: 50%; transform: translateX(-50%); z-index: 10000; background: white; {{#if showMenu}}display: block !important;{{else}}display: none !important;{{/if}}">

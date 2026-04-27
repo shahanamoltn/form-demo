@@ -8,7 +8,6 @@ define('JJ.wishlists.wishlists', [
 	_
 ) {
 	'use strict';
-
 	return {
 		mountToApp: function (container) {
 			if (FacetsItemCellView) {

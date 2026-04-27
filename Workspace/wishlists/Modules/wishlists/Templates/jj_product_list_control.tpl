@@ -28,6 +28,7 @@
 			{{translate 'Add to'}}
 		{{/if}}
 	</h5>
+    
 	<ul class="product-list-control-flyout-product-lists">
 		{{#if isEmpty}}
 			<li class="product-list-control-nolists-messages">
