@@ -1,20 +1,20 @@
 // Model.js
 // -----------------------
-// @module Case
-define("JJ.salesRep.salesRep.SS2Model", ["Backbone", "Utils"], function(
+// @module JJ.salesrep.salesrep
+define("JJ.salesrep.salesrep.SS2Model", ["Backbone", "Utils"], function(
     Backbone,
     Utils
 ) {
     "use strict";
-
-    // @class Case.Fields.Model @extends Backbone.Model
+    // @class JJ.salesrep.salesrep.SS2Model @extends Backbone.Model
     return Backbone.Model.extend({
         //@property {String} urlRoot
         urlRoot: Utils.getAbsoluteUrl(
             getExtensionAssetsPath(
-                "Modules/salesRep/SuiteScript2/salesRep.Service.ss"
+                "Modules/salesrep/SuiteScript2/salesrep.Service.ss"
             ),
             true
         )
+    });
 });
-});
+

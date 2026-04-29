@@ -1,33 +1,42 @@
 
+
 define(
-	'JJ.salesRep.salesRep'
+	'JJ.salesrep.salesrep'
 ,   [
-		'JJ.salesRep.salesRep.View'
+		'JJ.salesrep.salesrep.View'
 	]
 ,   function (
-		salesRepView
+		salesrepView
 	)
 {
 	'use strict';
-
 	return  {
 		mountToApp: function mountToApp (container)
 		{
-			// using the 'Layout' component we add a new child view inside the 'Header' existing view 
-			// (there will be a DOM element with the HTML attribute data-view="Header.Logo")
-			// more documentation of the Extensibility API in
-			// https://system.netsuite.com/help/helpcenter/en_US/APIs/SuiteCommerce/Extensibility/Frontend/index.html
+			console.log('SalesPerson Extension Loading...');
 			
-			/** @type {LayoutComponent} */
+			// Using Layout component as it is available across all application contexts
 			var layout = container.getComponent('Layout');
 			
-			if(layout)
+			if (layout)
 			{
-				layout.addChildView('Header.Logo', function() { 
-					return new salesRepView({ container: container });
+				console.log('Layout Component found. Mounting views...');
+
+				// Mount to Account Overview Banner
+				layout.addChildView('Overview.Banner', function() { 
+					return new salesrepView({ container: container });
+				});
+
+				// Mount to Recent Purchases (Order History) page Banner
+				layout.addChildView('OrderHistory.List.Banner', function() { 
+					return new salesrepView({ container: container });
 				});
 			}
-
+			else {
+				console.error('SalesPerson Error: Layout component not found.');
+			}
 		}
 	};
 });
+
+
