@@ -1,0 +1,61 @@
+
+define('JJ.salesrepe.salesrepe.View'
+	, [
+		'jj_salesrepe_salesrepe.tpl'
+		, 'JJ.salesrepe.salesrepe.SS2Model'
+		, 'Backbone'
+	]
+	, function (
+		jj_salesrepe_salesrepe_tpl
+			,	salesrepeSS2Model
+
+		, Backbone
+	) {
+		'use strict';
+
+		return Backbone.View.extend({
+
+			template: jj_salesrepe_salesrepe_tpl
+
+			, initialize: function (options) {
+				this.model = new salesrepeSS2Model();
+				var self = this;
+				this.isLoading = true;
+
+				this.model.fetch().done(function () {
+					console.log("SalesPerson fetch success. Model data:", self.model.attributes);
+					self.isLoading = false;
+					self.render(); // Final render with data
+				}).fail(function (e) {
+					self.isLoading = false;
+					console.error("SalesPerson fetch failed", e);
+					self.render();
+				});
+			}
+			, render: function() {
+				if (this.isLoading) {
+					return this; 
+				}
+				return Backbone.View.prototype.render.apply(this, arguments);
+			}
+
+			, getContext: function getContext() {
+				var context = {
+					isLoading: this.isLoading,
+					showRepresentative: this.model.get('assigned') && !this.isLoading,
+					
+					name: this.model.get('name'),
+					title: this.model.get('title'),
+					comments: this.model.get('comments'),
+					email: this.model.get('email'),
+					phone: this.model.get('phone'),
+					image: this.model.get('image'),
+					meetingLink: this.model.get('meeting_link')
+				};
+
+				console.log("SalesPerson View Context:", context);
+
+				return context;
+			}
+		});
+	});
